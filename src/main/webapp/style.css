@@ -1,0 +1,35 @@
+.MainHeader{
+	background-color: #ED940C;
+}
+
+.Header1{
+	background-color: #2B287B;
+}
+a{
+	text-decoration: none;
+}
+.text-hand{
+	color:rgb(237, 148, 12)
+}
+.nav-link{
+	color: white;
+    margin-right: 5rem;
+}
+.info_section{
+ background-color: #21202C;	
+}
+.info_logo{
+	text-align: center;
+}
+.nav-foot{
+	color:#B2B8C1
+}
+.social_box i{
+	color: #ED940C;
+	margin-left: 1rem;
+}
+footer{
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
