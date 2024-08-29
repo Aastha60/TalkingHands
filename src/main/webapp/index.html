@@ -10,6 +10,76 @@
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="style.css">
+	<style>
+	.MainHeader {
+        animation: fadeInDown 1s ease-in-out;
+    }
+
+   
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .img-box {
+        animation: zoomIn 1s ease-in-out;
+    }
+
+  
+    @keyframes zoomIn {
+        0% {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+
+    .nav-link:hover, .btn:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+
+    .box {
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+        animation-delay: 0.5s;
+    }
+
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+   
+    footer a:hover {
+        color: #ED940C;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .social_box a:hover {
+        color: #ED940C;
+        transform: scale(1.2);
+        transition: transform 0.3s ease-in-out;
+    }
+</style>
 	<title>Talking Hands</title>
 </head>
 
@@ -26,8 +96,9 @@
 						aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
-						<div class="d-flex justify-content-center">
+					<div class="d-flex justify-content-center">
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						
 							<ul class="navbar-nav  ">
 								<li class="nav-item">
 									<a class="nav-link text-white active" aria-current="page" href="#"><i
@@ -62,7 +133,9 @@
 					aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContentt">
+				<div class="d-flex justify-content-center">
+				<div class="collapse navbar-collapse" id="navbarSupportedContentt">
+					
 					<ul class="navbar-nav  ">
 						<li class="nav-item">
 							<a class="nav-link text-white active" aria-current="page" href="#">HOME</a>
@@ -83,6 +156,7 @@
 							<a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
 						</li>
 					</ul>
+				</div>
 				</div>
 			</div>
 		</nav>
@@ -108,7 +182,7 @@
 						</p>
 					</div>
 				</div>
-                <div class="col-md-6 ">
+				<div class="col-md-6 ">
 					<div class="img-box m-2 ">
 						<img src="images/oip2.jpg" class="img-fluid" height="300rem" width="300rem" alt="no image" />
 					</div>
@@ -213,7 +287,7 @@
 					<a class="navbar-brand" href="index.html"> Talking<span style=" color: #ED940C">Hands</span> </a>
 				</div>
 				<div class="info_main">
-					<div class="row">
+					<div class="row ">
 						<div class="col-md-3 col-lg-2">
 							<div class="info_link-box">
 								<h5>
@@ -264,7 +338,6 @@
 								</a>
 							</div>
 						</div>
-
 					</div>
 				</div>
 				<div class="info_bottom">
@@ -322,7 +395,6 @@
 			</p>
 		</div>
 	</footer>
-
 </body>
 
 </html>

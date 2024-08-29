@@ -1,6 +1,13 @@
 .MainHeader{
 	background-color: #ED940C;
 }
+.MainHeader {
+    transition: background-color 0.5s ease;
+}
+
+.MainHeader.scrolled {
+    background-color: #ED940C;
+}
 
 .Header1{
 	background-color: #2B287B;
@@ -11,6 +18,10 @@ a{
 .text-hand{
 	color:rgb(237, 148, 12)
 }
+
+
+
+
 .nav-link{
 	color: white;
     margin-right: 5rem;
@@ -18,12 +29,6 @@ a{
 .info_section{
  background-color: #21202C;	
 }
-
-
-				
-				<div class="img-box">
-              <img src="images/s1.png" alt="" />
-            </div>
 .info_logo{
 	text-align: center;
 }
