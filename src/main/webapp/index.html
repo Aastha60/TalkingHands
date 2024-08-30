@@ -11,7 +11,7 @@
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="style.css">
 	<style>
-	.MainHeader {
+		.MainHeader {
         animation: fadeInDown 1s ease-in-out;
     }
 
@@ -67,6 +67,7 @@
             transform: translateY(0);
         }
     }
+    
 
    
     footer a:hover {
@@ -79,9 +80,112 @@
         transform: scale(1.2);
         transition: transform 0.3s ease-in-out;
     }
-</style>
+
+
+.nav-link{
+	color: white;
+    margin-right: 5rem;
+}
+
+/* General Styling */
+
+
+
+.heading_container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.heading_container .highlight {
+    color: #ED940C;
+    font-weight: bold;
+}
+
+/* Service Box Styling */
+.service-box {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.service-box:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-link {
+    text-decoration: none;
+}
+
+.detail-box {
+    padding: 20px;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+}
+
+.service-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+   }
+
+/* Hover Text Animation */
+.service-title:hover {
+    color: #ED940C;
+    animation: wiggle 0.5s ease-in-out forwards;
+}
+
+.service-description:hover {
+    color: #000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-2deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-title {
+        font-size: 1.25rem;
+    }
+
+    .service-description {
+        font-size: 0.9rem;
+    }
+}
+	</style>
 	<title>Talking Hands</title>
-</head>
+</h>
 
 <body>
 	<header class="MainHeader pt-2">
@@ -113,10 +217,10 @@
 										aasthasingla203@gmail.com</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#"><i class="fa-brands fa-github"></i> Github</a>
+									<a class="nav-link" href="https://github.com/Aastha60"><i class="fa-brands fa-github"></i> Github</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#"><i class="fa-brands fa-linkedin"></i> Linkdin</a>
+									<a class="nav-link" href="https://www.linkedin.com/in/aastha-singla-aa0455246/"><i class="fa-brands fa-linkedin"></i> Linkdin</a>
 								</li>
 							</ul>
 						</div>
@@ -138,19 +242,19 @@
 					
 					<ul class="navbar-nav  ">
 						<li class="nav-item">
-							<a class="nav-link text-white active" aria-current="page" href="#">HOME</a>
+							<a class="nav-link text-white active" aria-current="page" href="index.html">HOME</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white" href="#">DICTIONARY</a>
+							<a class="nav-link text-white" href="dictionary.jsp">DICTIONARY</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">VIDEOS</a>
+							<a class="nav-link" href="videos.jsp">VIDEOS</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">ABOUT US</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#"><i class="fa-solid fa-user"></i> LOGIN</a>
+							<a class="nav-link" href="loginpage.jsp"><i class="fa-solid fa-user"></i> LOGIN</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -235,48 +339,41 @@
 	<!-- service section -->
 
 	<section class="service_section layout_padding m-4">
-		<div class="container -fluid text-center  ">
-			<div class="heading_container heading_center text-center m-3">
-				<h2> Our <span style="color: #ED940C;">Services</span></h2>
-			</div>
-			<div class="row">
-				<div class="col-sm-2 col-md-6 ">
-					<a href="sentence.jsp">
-						<div class="box border border-dark ">
+        <div class="container-fluid text-center">
+            <div class="heading_container heading_center text-center m-3">
+                <h2>Our <span class="highlight" style="color:#ED940C ;">Services</span></h2>
+                
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-6 mb-4">
+                    <a href="sentence.jsp" class="service-link">
+                        <div class="box service-box border border-dark">
+                            <div class="detail-box p-4 m-4 text-black">
+                                <h5 class="service-title">Sentence to Video</h5>
+                                <p class="service-description">
+                                    After clicking this, a page is opened where you can write a sentence to get the sign video of that sentence.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-							<div class="detail-box p-4 m-4 text-black">
-								<h5 style="margin:2rem">
-									Sentence to video
-								</h5>
-								<p>
-									After clicking this , a page is opened and in a textfield u can write a sentence
-									then you will get the sign video of that sentence.
-								</p>
-							</div>
-						</div>
-					</a>
-				</div>
 
-				<div class="col-sm-2 col-md-6">
-
-					<a href="loginpage.jsp">
-						<div class="box border border-dark">
-							<div class="detail-box p-4 m-4 text-black">
-								<h5 style="margin:2rem">
-									Add video
-								</h5>
-								<p>
-									After clicking on this , a page is opened and you can upload a video here of any
-									word.
-								</p>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-
-	</section>
+				<div class="col-sm-12 col-md-6 mb-4">
+                    <a href="loginpage.jsp" class="service-link">
+                        <div class="box service-box border border-dark">
+                            <div class="detail-box p-4 m-4 text-black">
+                                <h5 class="service-title">Add Video</h5>
+                                <p class="service-description">
+                                    After clicking this, a page is opened where you can upload a video of any word.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 	<!-- end service section -->
 
