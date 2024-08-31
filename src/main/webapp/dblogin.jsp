@@ -13,8 +13,8 @@
             String Inst=request.getParameter("t4");
             String mobile=request.getParameter("t3");
             
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost/talkinghands","root","");
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con=DriverManager.getConnection("jdbc::mysql://localhost:3306/talkinghands","root","");
             Statement s=con.createStatement();
             String q="insert into users(Userid,Name,Password,MobileNo,Institution) values ('"+id+"','"+name+"','"+pass+"','"+mobile+"','"+Inst+"')";
             s.execute(q);
